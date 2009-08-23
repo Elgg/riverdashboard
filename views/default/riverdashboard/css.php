@@ -122,6 +122,27 @@
 	margin:2px 0 2px 20px;
 }
 
+.river_content_display {
+	border-left:1px solid #ddd;
+	padding:2px 10px 0 10px;
+	font-size:90%;
+	margin:4px 0 2px 20px;
+}
 
+.river_content_display p {
+	padding:0;
+	margin:0;
+}
+
+.following_icon {
+	width:20px;
+	height:40px;
+	margin:0 2px 0 2px;
+	background: url(<?php echo $vars['url']; ?>mod/riverdashboard/graphics/follow_icon.gif) no-repeat left top;
+}
+.river_content_display div.usericon a.icon img {
+	width:40px;
+	height:40px;
+}
 
 
