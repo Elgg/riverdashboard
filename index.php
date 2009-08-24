@@ -30,16 +30,13 @@
 		if (empty($callback)) {
 
 			//set a view for the wire to extend
-			$area1 = elgg_view("activity/thewire");
+			$area1 = elgg_view("riverdashboard/sitemessage");
 	
 			//set a view to display newest members
 			$area1 .= elgg_view("riverdashboard/newestmembers");	
 			
 			//set a view to display a welcome message
 			$body .= elgg_view("riverdashboard/welcome");
-	
-			//set a view to display a site wide message
-			$body .= elgg_view("riverdashboard/sitemessage");
 
 		}
 		

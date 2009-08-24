@@ -25,7 +25,7 @@
 	
 ?>
 
-	<div class="contentWrapper welcomemessage">
+	<div class="sidebarBox">
 	
 <?php
 
