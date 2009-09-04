@@ -126,7 +126,7 @@
 	border-left:1px solid #ddd;
 	padding:2px 10px 0 10px;
 	font-size:90%;
-	margin:4px 0 2px 20px;
+	margin:4px 0 2px 30px;
 }
 
 .river_content_display p {
