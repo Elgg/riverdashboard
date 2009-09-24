@@ -138,7 +138,7 @@
 	width:20px;
 	height:40px;
 	margin:0 2px 0 2px;
-	background: url(<?php echo $vars['url']; ?>mod/riverdashboard/graphics/follow_icon.gif) no-repeat left top;
+	background: url(<?php echo $vars['url']; ?>mod/riverdashboard/graphics/follow_icon.png) no-repeat left top;
 }
 .river_content_display div.usericon a.icon img {
 	width:40px;
