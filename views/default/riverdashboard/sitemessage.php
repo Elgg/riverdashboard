@@ -13,7 +13,8 @@
 
 	//grab the current site message
 	$site_message = get_entities("object", "sitemessage", 0, "", 1);
-	foreach($site_message as $mes){
+	if ($site_message) {
+		$mes = $site_message[0];
 		$message = $mes->description;
 		$dateStamp = friendly_time($mes->time_created);
 		$delete = elgg_view("output/confirmlink",array(
