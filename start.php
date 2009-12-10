@@ -43,7 +43,7 @@
 		{
 			global $CONFIG;
 			
-			@include(dirname(__FILE__) . "/index.php");
+			include(dirname(__FILE__) . "/index.php");
 			return true;
 		}
 		
