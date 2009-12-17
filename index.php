@@ -17,7 +17,11 @@
 		$content = get_input('content','');
 		$content = explode(',',$content);
 		$type = $content[0];
-		$subtype = $content[1];
+		if (isset($content[1])) {
+			$subtype = $content[1];
+		} else {
+			$subtype = '';
+		}
 		$orient = get_input('display');
 		$callback = get_input('callback');
 		
