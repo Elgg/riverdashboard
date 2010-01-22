@@ -18,10 +18,10 @@
 		$message = $mes->description;
 		$dateStamp = friendly_time($mes->time_created);
 		$delete = elgg_view("output/confirmlink",array(
-															'href' => $vars['url'] . "action/riverdashboard/delete?message=" . $mes->guid,
-															'text' => elgg_echo('delete'),
-															'confirm' => elgg_echo('deleteconfirm'),
-														));
+			'href' => $vars['url'] . "action/riverdashboard/delete?message=" . $mes->guid,
+			'text' => elgg_echo('delete'),
+			'confirm' => elgg_echo('deleteconfirm'),
+		));
 	}
 	
 ?>
