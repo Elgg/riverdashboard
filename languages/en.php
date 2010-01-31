@@ -18,6 +18,7 @@
 		'sitemessages:river:create' => "posted a new site wide message",
 		'sitemessages:add' => "Add a site-wide message to the river page",
 		'sitemessage:deleted' => "Site message deleted",
+		'sitemessage:error' => "Failed to save site message.",
 		
 		'river:widget:noactivity' => 'We could not find any activity.',
 		'river:widget:title' => "Activity",
