@@ -28,14 +28,14 @@
 <div class="contentWrapper">
 	<div id="elgg_horizontal_tabbed_nav">
 		<ul>
-			<li <?php echo $allselect; ?> ><a onclick="javascript:$('#river_container').load('<?php echo $vars['url']; ?>mod/riverdashboard/?type=<?php echo $vars['type']; ?>&content=<?php echo $vars['subtype']; ?>&callback=true'); return false;" href="?type=<?php echo $vars['type']; ?>&content=<?php echo $vars['subtype']; ?>"><?php echo elgg_echo('all'); ?></a></li>
-			<li <?php echo $friendsselect; ?> ><a onclick="javascript:$('#river_container').load('<?php echo $vars['url']; ?>mod/riverdashboard/?type=<?php echo $vars['type']; ?>&display=friends&content=<?php echo $vars['subtype']; ?>&callback=true'); return false;" href="?type=<?php echo $vars['type']; ?>&display=friends&content=<?php echo $vars['subtype']; ?>"><?php echo elgg_echo('friends'); ?></a></li>
-			<li <?php echo $mineselect; ?> ><a onclick="javascript:$('#river_container').load('<?php echo $vars['url']; ?>mod/riverdashboard/?type=<?php echo $vars['type']; ?>&display=mine&content=<?php echo $vars['subtype']; ?>&callback=true'); return false;" href="?type=<?php echo $vars['type']; ?>&display=mine&content=<?php echo $vars['subtype']; ?>"><?php echo elgg_echo('mine'); ?></a></li>
+			<li <?php echo $allselect; ?> ><a onclick="javascript:$('#river_container').load('<?php echo $vars['url']; ?>mod/riverdashboard/?content=<?php echo $vars['type']; ?>,<?php echo $vars['subtype']; ?>&amp;callback=true'); return false;" href="?display="><?php echo elgg_echo('all'); ?></a></li>
+			<li <?php echo $friendsselect; ?> ><a onclick="javascript:$('#river_container').load('<?php echo $vars['url']; ?>mod/riverdashboard/?display=friends&amp;content=<?php echo $vars['type']; ?>,<?php echo $vars['subtype']; ?>&amp;callback=true'); return false;" href="?display=friends"><?php echo elgg_echo('friends'); ?></a></li>
+			<li <?php echo $mineselect; ?> ><a onclick="javascript:$('#river_container').load('<?php echo $vars['url']; ?>mod/riverdashboard/?display=mine&amp;content=<?php echo $vars['type']; ?>,<?php echo $vars['subtype']; ?>&amp;callback=true'); return false;" href="?display=mine"><?php echo elgg_echo('mine'); ?></a></li>
 		</ul>
 	</div>
 	
 	<div class="riverdashboard_filtermenu">
-		<select name="content" id="content" onchange="javascript:$('#river_container').load('<?php echo $vars['url']; ?>mod/riverdashboard/?callback=true&display='+$('input#display').val() + '&content=' + $('select#content').val());">
+		<select name="content" id="content" onchange="javascript:$('#river_container').load('<?php echo $vars['url']; ?>mod/riverdashboard/?callback=true&amp;display='+$('input#display').val() + '&amp;content=' + $('select#content').val());">
 			<?php
 	
 				foreach($contents as $label => $content) {
