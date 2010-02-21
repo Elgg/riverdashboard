@@ -12,7 +12,7 @@
 	 */
 
 	//grab the current site message
-	$site_message = get_entities("object", "sitemessage", 0, "", 1);
+	$site_message = elgg_get_entities(array('types' => 'object', 'subtypes' => 'sitemessage', 'limit' => 1));
 	if ($site_message) {
 		$mes = $site_message[0];
 		$message = $mes->description;
